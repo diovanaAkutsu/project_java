@@ -38,7 +38,7 @@ public class TenantService {
         return toResponse(savedTenant);
     }
 
-    // Aqui ele criou uma lista pra trasnformar os dados dentro do repository em dto
+    // Aqui ele criou uma lista pra transformar os dados dentro do repository em dto
     public List<TenantResponseDTO> findAll() {
         List<Tenant> tenants = tenantRepository.findAll();
         List<TenantResponseDTO> responses = new ArrayList<>();
